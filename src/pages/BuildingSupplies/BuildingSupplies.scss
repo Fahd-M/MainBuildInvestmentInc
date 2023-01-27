@@ -31,6 +31,11 @@
         padding:1rem;
     }
 
+    
+    &__list {
+        @include list-reset;
+    }
+    
     &__desc {
         &--cta {
             @include link-reset;

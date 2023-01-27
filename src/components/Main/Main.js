@@ -10,7 +10,7 @@ const Main = () => {
 
         <section className="main__content">
             <h2 className="main__title"> About Us </h2>
-            <p className="main__byline">  Founded By Riad Wehbe </p>
+            <p className="main__byline">  Founded By Riad Wehbe(Owner and Project Manager) </p>
             <p className="main__desc"> Real estate and construction specialist </p>
 
             <p className="main__desc-details"> For consultations on real estate and construction investments.</p>
