@@ -1,0 +1,67 @@
+@use '../../styles/mixins' as *;
+
+.hero {
+    width: 100%; 
+    min-height: 20vh;
+    
+    background-image: url("../../assets/images/construction-manager-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 16/9; 
+    @include flex-layout(row, flex-end, center);
+    padding-right: 2%;
+
+    @include tablet {
+        max-height: 30vh;
+        background-position: center;
+        @include flex-layout(row, flex-end, center);
+        padding-left: 20%;
+    }
+
+    @include desktop {
+        max-height: 40vh;
+    
+    }
+
+    &__content {
+        @include flex-layout(row, center, center);
+
+        @include tablet {
+            @include flex-layout(row, flex-end, center);
+            flex-wrap:wrap;
+
+        }
+
+        @include desktop {
+            margin: 0 auto;
+        }
+        //padding-top: 3.25rem;
+    }
+
+    &__title {
+        color:black;
+        font-size: 1.5rem;
+
+        @include tablet {
+            display:none;
+        }
+
+        &--main {
+            color: red;
+            text-align: center;
+        }
+    }
+
+    &__title-tablet {
+        display: none;
+        @include tablet {
+            color: black;
+            font-size: 3rem; 
+            display: inline-block;
+            padding-left:40%;
+            @include flex-layout(column, center, center);
+        }
+    }
+
+
+}

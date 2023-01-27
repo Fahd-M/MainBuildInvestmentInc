@@ -1,0 +1,73 @@
+@use '../../styles/mixins' as *;
+
+
+.main {
+    @include flex-layout(column, center, center); 
+    letter-spacing: 1px;
+    &__content {
+        @include flex-layout(column,center,center);
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        @include desktop{
+            margin: 0 auto;
+            gap:0.5rem;
+        }
+    }
+   
+    &__title {
+        text-decoration: underline;
+        text-transform: uppercase;
+        @include tablet {
+            font-size: 2.5rem;
+        }
+        @include desktop {
+            margin-top:2rem;
+        }
+    }
+
+    &__byline {
+        font-style: italic;
+        font-size: .75rem;
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__desc {
+        text-transform: uppercase;
+        margin-top:1rem;
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+
+    &__desc-details {
+        color:white; 
+        &--cta {
+            color:orangered;
+        }
+        @include tablet {
+            font-size: 1.5rem;
+        }
+        
+    }
+
+
+
+    &__clients {
+        @include desktop{
+            margin: 0 auto;
+
+        }
+    }
+
+    &__contact {
+        width: 80%;
+        
+
+        @include desktop{
+            margin: 0 auto;
+        }
+    }
+}

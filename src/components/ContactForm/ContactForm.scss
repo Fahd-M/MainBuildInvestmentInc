@@ -1,0 +1,77 @@
+@use '../../styles/mixins' as *;
+
+.contact {
+    width: 100%;
+    margin-top:3rem;
+
+    &__content {
+        width:100%;
+        @include flex-layout(column,center,center);
+        @include tablet {
+            width: 100%;
+        }
+        @include desktop {
+            margin: 0 auto;
+        }
+    }
+
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+    width: 100%;
+    @include desktop {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+        padding:1rem;
+        margin-bottom:1rem;
+    }
+
+    &__label {
+        text-transform: uppercase;
+        word-spacing: 1px;
+        color:white;
+        font-size:1.25rem;
+
+    }
+
+    &__err-msg {
+        color: red;
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding-bottom:1rem;
+        text-align: center;
+    }
+}
+
+.hidden {
+    display:none;
+}
+
+
+input,
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+

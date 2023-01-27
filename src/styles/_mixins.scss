@@ -1,0 +1,42 @@
+
+$screen-mobile: 320px;
+$screen-tablet: 767px;
+$screen-desktop: 1279px;
+
+
+@mixin mobile {
+    @media screen and (min-width: $screen-mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $screen-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $screen-desktop) {
+        @content;
+    }
+}
+
+@mixin list-reset {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+@mixin link-reset {
+    text-decoration: none;
+    color: white;
+}
+
+@mixin flex-layout($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+

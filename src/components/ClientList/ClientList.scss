@@ -1,0 +1,84 @@
+@use '../../styles/mixins' as *;
+
+.clients {
+    //padding-top: 2rem; 
+
+    &__content {
+        @include flex-layout(column, center, center);
+        gap: 1rem;
+
+        @include desktop {
+            margin-top:3rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: underline;
+        @include tablet {
+            font-size:2rem;
+        }
+    }
+
+    &__desc {
+        @include tablet {
+            font-size:1.5rem;
+        }
+    }
+}
+
+.client-cards {
+    @include flex-layout(column, center, center);
+    gap:1rem;
+    letter-spacing: 1px;
+    width: 100%;
+
+    @include tablet {
+        @include flex-layout(row, center, center);
+        flex-wrap:wrap;
+    }
+}
+
+.client-card {
+    border: 1px solid darkgrey;
+    //background: gray;
+    width: 80%; 
+    //box-shadow: 0 4px 8px 0 rgba(248, 244, 244, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 3px 3px 5px #dfdfdf;
+
+    @include flex-layout(column, center, center);
+    gap: 0.5rem;
+    flex-wrap:nowrap;
+
+    &:hover {
+        background-color: white;
+        color:black;
+    }
+
+    @include tablet {
+        height: 10rem;
+        width: auto; 
+
+    }
+
+    &__name {
+        padding:0.5rem;
+        color:orangered;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__info {
+        @include flex-layout(column,center,center);
+        padding:0.5rem;
+    }
+
+    &__address {
+
+    }
+
+    &__city {
+
+    }
+}

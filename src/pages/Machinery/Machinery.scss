@@ -1,0 +1,46 @@
+@use "../../styles/mixins" as *;
+
+
+.machinery {
+
+    width: 100%; 
+    letter-spacing: 1.5px;
+
+    &__content {
+        @include flex-layout(column,center,center);
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        @include desktop{
+            margin: 0 auto;
+            gap:0.5rem;
+        }
+
+        @include desktop {
+            margin: 0 auto;
+        }
+    }
+
+    &__info {
+        @include flex-layout(column,center,center);
+        gap:1rem;
+        padding:1rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        padding:1rem;
+    }
+
+    &__desc {
+
+        &--cta {
+            @include link-reset;
+            color: orangered;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+}
