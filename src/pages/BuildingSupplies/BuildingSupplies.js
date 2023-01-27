@@ -26,7 +26,6 @@ const BuildingSupplies = () => {
               <p className="build-supplies__desc"> We will continue to update this page with our building supplies inventory. </p>
               <p className="build-supplies__desc"> Contact us if you have any further inquiries by submitting the form on the </p>
               <Link to="/home" className="build-supplies__desc build-supplies__desc--cta"> home page. </Link>
-
             </div>
 
         </div>

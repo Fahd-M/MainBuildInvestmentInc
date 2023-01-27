@@ -60,6 +60,15 @@
     display:none;
 }
 
+.alert {
+    &__success {
+        color: green;
+    }
+
+    &__error {
+        color:red; 
+    }
+}
 
 input,
 button,
