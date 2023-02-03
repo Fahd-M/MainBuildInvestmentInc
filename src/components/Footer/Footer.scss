@@ -4,15 +4,15 @@
 .footer {
     width: 100%;
     background-color: darkgrey;
-    text-align: center;
+    //text-align: center;
     @include flex-layout(column,center,center);
 
 
     &__content {
-        width: 95%;
+        //width: 95%;
         @include flex-layout(column, center, center);
         gap:0.5rem;
-
+        padding:0.5rem;
         @include tablet {
             @include flex-layout(row, space-between, center);
         }
@@ -37,8 +37,13 @@
         }
     }
 
+    &__link {
+        @include flex-layout(column,center,center);
+    }
+    
     &__logo {
-        width:100%;
+        width:80%;
+        
 
         &:hover {
             cursor: pointer;
@@ -127,7 +132,8 @@
     }
 
     &__hours {
-        @include flex-layout(column,center, center);
+        display:none;
+        //@include flex-layout(column,center, center);
     }
 
     &__hours-title {

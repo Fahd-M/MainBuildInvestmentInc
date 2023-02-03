@@ -7,7 +7,7 @@ const Hero = () => {
         <div className='hero__content'> 
             <h1 className='hero__title'> Welcome! </h1>
             <h1 className='hero__title-tablet'> Welcome to 
-                <span className='hero__title--main'> Main Build Investment Inc! </span> 
+                <span className='hero__title--main'> Main Build Investment! </span> 
             </h1>
         </div>
     </section>

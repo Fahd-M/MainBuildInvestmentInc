@@ -14,8 +14,8 @@ const Footer = () => {
                 
                 <div className='footer__info'>
                     <p className='footer__name'> Main Build Investments Inc.</p>
-                    <span className='footer__address-one'> CA</span>
-                    <span className='footer__address-two'> 442 Marf Avenue, Mississauga, {"\n"} ON L5G 1T3 </span>
+                    <span className='footer__address-one'> 1615 Bonanza St, STE 203</span>
+                    <span className='footer__address-two'> Walnut Creek CA 94596-4510 </span>
                 </div>
             </div>
 

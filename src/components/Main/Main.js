@@ -14,50 +14,33 @@ const Main = () => {
             <p className="main__byline">  Founded By Riad Wehbe(Owner and Project Manager) </p>
             <p className="main__desc"> Real estate and construction specialist </p>
 
-            <ul className="main__desc-details"> 
-              <li className="main__desc-detail">  
+            <div className="main__desc-details"> 
+              <p className="main__desc-detail">  
                 Main Build Investments as a company our values and culture can be summed up by three words: {"\n"}  
                   <span className="main__desc-detail--values">
                     passion, dedication and reliability.
                   </span>
-              </li>
+              </p>
 
-              <li className="main__desc-detail">  
+              <p className="main__desc-detail">  
                 This creates our business ethics that strengthen our ability to deliver incredible value to our clients and future partners.
-              </li>
-
-              <li className="main__desc-detail">  
                 The satisfaction of our clients are crucial to our continued success. 
-              </li>
-              
-              <li className="main__desc-detail">  
                 We firmly believe our success depends on delivering the highest level of quality and service at all levels of our organization we promote a creative way of thinking. 
-
-              </li>
-              
-              <li className="main__desc-detail">  
                 We want everyone to challenge the status-quo : to invent, develop, and innovate to help us effectively grow into the next stage of our company’s history. 
-              </li>
-              
-              <li className="main__desc-detail">  
                 We will strive to access new business opportunities within the broad growth strategy of our company. 
-              </li>
-              
-              <li className="main__desc-detail">  
                 In order to provide the high-quality service our clients demand and deserve, the company must be consistently reliable and dedicated to exceed expectations. 
-              </li>
-
-              <li className="main__desc-detail">  
                 We will be active and caring contributors to the communities in which we live and work. 
-              </li>
 
-              <li className="main__desc-detail--cta">  
+              </p>
+
+
+              <p className="main__desc-detail--cta">  
                 Please visit our other pages for  
                   <Link to="/supplies" className="main__desc-link"> supplies, </Link> 
                   <Link to="/machinery" className="main__desc-link"> machinery, </Link>
                   <Link to="/contact" className="main__desc-link"> or to contact us directly. </Link>
-              </li>
-            </ul>
+              </p>
+            </div>
         </section>
 
         <section className="main__resources">

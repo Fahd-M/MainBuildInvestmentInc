@@ -10,7 +10,6 @@
     
     &__content {
         @include flex-layout(column,center,center);
-        text-align: center;
         margin: 1em 0;
         width:80%;
 
@@ -57,7 +56,6 @@
     }
 
     &__subtitle {
-        text-align: center;
         white-space: pre-wrap;
 
         @include tablet {
