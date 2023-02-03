@@ -4,11 +4,15 @@
 .main {
     @include flex-layout(column, center, center); 
     letter-spacing: 1px;
+
     &__content {
         @include flex-layout(column,center,center);
-        text-align: center;
         margin-top: 1em;
         margin-bottom: 2em;
+        gap:1rem;
+        padding: 0.5rem;
+        text-align: center;
+
         @include desktop{
             margin: 0 auto;
             gap:0.5rem;
@@ -16,58 +20,348 @@
     }
    
     &__title {
-        text-decoration: underline;
+        border-bottom: 1px solid white;
+        color:white;
         text-transform: uppercase;
+        font-size: 2rem;
+
         @include tablet {
             font-size: 2.5rem;
         }
         @include desktop {
             margin-top:2rem;
+            font-size: 4.5rem;
         }
     }
 
     &__byline {
         font-style: italic;
         font-size: .75rem;
+        color:white;
+
+
         @include tablet {
             font-size: 1rem;
+        }
+
+        @include desktop {
+            font-size: 1.5rem;
         }
     }
 
     &__desc {
         text-transform: uppercase;
         margin-top:1rem;
+        color:white;
+
+
         @include tablet {
             font-size: 2rem;
+        }
+
+        @include desktop {
+            font-size: 2.5rem;
         }
     }
 
     &__desc-details {
-        color:white; 
-        &--cta {
-            color:orangered;
-        }
+        white-space: pre-wrap;
+        color:black; 
+        letter-spacing: 1px;
+        @include list-reset;
+        @include flex-layout(column, center, center);
+        gap:0.5rem;
+
         @include tablet {
             font-size: 1.5rem;
         }
+
+        @include desktop {
+            font-size: 2rem;
+            gap: 1rem;
+        }
         
     }
 
+    &__desc-detail {
+        letter-spacing: 1px;
+        white-space: pre-wrap;
 
+        @include list-reset;
 
-    &__clients {
-        @include desktop{
-            margin: 0 auto;
+        &--values {
+            text-transform: uppercase;
 
+            @include desktop {
+                font-size: 2.5rem;
+            }
+
+        }
+
+        &--cta {
+            @include flex-layout(column, center, center);
         }
     }
 
-    &__contact {
-        width: 80%;
+    &__desc-link {
+        @include link-reset;
         
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            cursor: pointer;
+            text-decoration-color: #000aac;
+        }
+    }
+
+
+
+    &__resources {
+
+        @include flex-layout(column,center,center);
+        margin-top: 1em;
+        gap:0.5rem;
+        padding: 0.5rem;
+        text-align: center;
 
         @include desktop{
             margin: 0 auto;
+            gap:0.5rem;
+        }
+    }
+
+    &__resources-heading {
+        //border-top: 1px solid #000aac;
+        padding:2rem 1rem 1rem 1rem;
+        color:white;
+
+
+
+
+    }
+
+    &__resources-image {
+        //float:right;
+        width: 80%;
+        border-radius:2rem;
+
+        @include tablet {
+            width:50%;
+            float:right;
+        }
+    }
+
+    &__resources-title {
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size:1.75rem;
+        }
+
+        @include desktop {
+            font-size:3rem;
+            padding:1rem;
+            margin-top:2rem;
+        }
+    }
+
+    &__resources-byline {
+        @include tablet {
+            font-size:1.5rem;
+        }
+
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+
+
+    &__services {
+        @include flex-layout(column, center, center);
+        gap: 1rem;
+        padding:0.5rem;
+    }
+
+    &__services-title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-top:1rem;
+        color:white;
+
+        @include tablet {
+            font-size:2rem;
+        }
+
+        @include desktop {
+            font-size:3rem;
+        }
+    }
+
+    &__services-text {
+        color:black;
+        border-bottom: 1px solid black;
+        padding-bottom:1rem;
+
+        @include tablet {
+            font-size:1.5rem;
+        }
+
+        @include desktop {
+            font-size:2rem;
+        }
+    }
+
+    &__quotes {
+        @include flex-layout(column, center, center);
+        gap: 1rem;
+        padding:0.5rem;
+    }
+
+    &__quotes-title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color:white;
+
+        @include tablet {
+            font-size:2rem;
+        }
+
+        @include desktop {
+            font-size:3rem;
+        }
+    }
+
+    &__quotes-text {
+        color:black;
+        border-bottom: 1px solid black;
+        padding-bottom:1rem;
+
+        @include tablet {
+            font-size:1.5rem;
+        }
+
+        @include desktop {
+            font-size:2rem;
+        }
+        
+    }
+
+
+}
+
+.installation {
+    @include flex-layout(column,center,center);
+    padding:1rem;
+
+    &__title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color:white;
+        text-align: center;
+        padding-bottom:0.5rem;
+
+        @include tablet {
+            font-size:2rem;
+        }
+
+        @include desktop {
+            font-size:3rem;
+        }
+
+    }
+
+    &__byline {
+        @include tablet {
+            font-size:1.75rem;
+            margin-top:1rem;
+        }
+
+        @include desktop {
+            font-size:2.5rem;
+        }
+    }
+
+    &__text {
+        margin-top: 0.5rem;
+        white-space: pre-wrap;
+        text-align: center;
+
+        @include tablet {
+            font-size:1.5rem;
+        }
+
+        @include desktop {
+            font-size:2rem;
+        }
+    }
+
+    &__list {
+        padding:0;
+    }
+
+    &__item {
+        color:white;
+
+        @include tablet {
+            font-size:1.5rem;
+        }
+
+        @include desktop {
+            font-size:2rem;
+        }
+    }
+
+    &__learn {
+        margin-top:0.5rem;
+        color:white;
+        text-align: center;
+
+        @include tablet {
+            font-size:1.5rem;
+            letter-spacing: 2px;
+        }
+
+        @include desktop {
+            font-size:2rem;
+        }
+    }
+
+    &__text-offerings {
+        margin:1rem 0 0 0;
+        @include flex-layout(column,center, flex-start);
+        
+        @include tablet {
+            font-size:1.5rem;
+            letter-spacing: 2px;
+        }
+
+        @include desktop {
+            font-size:2rem;
+        }
+
+    }
+
+    &__offerings {
+        margin: 0 0 1rem 0;
+
+        @include tablet {
+            font-size:1.5rem;
+        }
+
+        @include desktop {
+            font-size:2rem;
+        }
+    }
+
+    &__conclusion {
+
+        @include tablet {
+            font-size:1.5rem;
+            text-align: center;
+        }
+
+        @include desktop {
+            font-size:2rem;
         }
     }
 }

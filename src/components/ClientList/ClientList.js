@@ -23,9 +23,9 @@ const ClientList = () => {
   return (
     <section className='clients'>
       <div className='clients__content'>
-        <h3 className='clients__title'> Clients </h3>
+        <h4 className='clients__title'> Clients </h4>
         
-        <p className='clients__desc'> We proudly work with the following clients: </p>
+        <p className='clients__desc'> We are proud to work with: </p>
         
         <div className='client-cards'>
           {clients.map((client) => (

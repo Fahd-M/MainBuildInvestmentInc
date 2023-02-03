@@ -1,0 +1,85 @@
+@use '../../styles/mixins' as *;
+
+.contact {
+    @include flex-layout(column,center, center);
+    letter-spacing: 1px;
+
+    @include tablet {
+        width:100%;
+    }
+    
+    &__content {
+        @include flex-layout(column,center,center);
+        text-align: center;
+        margin: 1em 0;
+        width:80%;
+
+        @include tablet {
+            width: 90%;
+        }
+        
+
+        @include desktop{
+            margin: 0 auto;
+            gap:0.5rem;
+        }
+    }
+
+    &__text {
+        @include flex-layout(column,center, center);
+
+        @include tablet {
+            width:100%;
+        }
+    
+        @include desktop {
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        font-size: 2rem;
+        text-align: center;
+        padding:1rem;
+        margin-bottom:1rem;
+        color:white;
+
+        border-bottom: 1px solid white;
+
+        @include tablet {
+            font-size: 3rem;
+            padding:0;
+        }
+
+        @include desktop {
+            font-size:4rem;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+        white-space: pre-wrap;
+
+        @include tablet {
+            font-size: 1.5rem;
+        }
+
+        @include desktop {
+            font-size:3rem;
+        }
+
+        &--bold {
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    }
+
+    &__form {
+        @include tablet {
+            width: 90%;
+            margin-top:1rem;
+        }
+    }
+
+}

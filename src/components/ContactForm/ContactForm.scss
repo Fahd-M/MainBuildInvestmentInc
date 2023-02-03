@@ -2,14 +2,15 @@
 
 .contact {
     width: 100%;
-    margin-top:3rem;
 
     &__content {
         width:100%;
         @include flex-layout(column,center,center);
+
         @include tablet {
             width: 100%;
         }
+
         @include desktop {
             margin: 0 auto;
         }
@@ -26,24 +27,35 @@
     flex-grow: 1;
     padding-bottom: 1rem;
     width: 100%;
+
+    @include tablet {
+        border-top: 1px solid white;
+        padding-top:1rem;
+
+        
+    }
+
     @include desktop {
         margin: 0 auto;
         max-width: 1200px;
     }
 
 
-    &__title {
-        font-size: 2rem;
-        text-align: center;
-        padding:1rem;
-        margin-bottom:1rem;
-    }
+
 
     &__sub-title {
         font-size: 1.5rem;
         text-align: center;
         padding:0.5rem;
         margin-bottom:1rem;
+
+        @include tablet {
+            font-size: 2rem;
+        }
+        
+        @include desktop {
+            font-size:2.5rem;
+        }
     }
 
     &__label {
@@ -51,6 +63,14 @@
         word-spacing: 1px;
         color:white;
         font-size:1.25rem;
+        
+        @include tablet {
+            font-size: 2rem;
+        }
+
+        @include desktop {
+            font-size:2.5rem;
+        }
 
     }
 
@@ -60,6 +80,14 @@
         text-transform: uppercase;
         padding-bottom:1rem;
         text-align: center;
+
+        @include tablet {
+            font-size: 1.25rem;
+        }
+
+        @include desktop {
+            font-size:2rem;
+        }
     }
 }
 
@@ -84,6 +112,15 @@ textarea {
   font-size: 22px;
   padding: 0.25rem;
   border-radius: 0.5rem;
+
+  @include tablet {
+    font-size:1.5rem;
+  }
+  
+  @include desktop {
+    font-size: 2rem;
+    }
+
 }
 
 textarea {

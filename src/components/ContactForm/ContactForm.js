@@ -18,8 +18,6 @@ const ContactForm = () => {
    const formRef = useRef();
   // const errRef = useRef(); 
 
-  //useEffect(() => {}, []);
-
   const handleChangeName = (event) => {
     setName(event.target.value);
   }
@@ -90,8 +88,6 @@ const ContactForm = () => {
     <section className="contact">
       <div className="contact__content">
         <form ref={formRef} className="form" action="" onSubmit={handleSubmit}>
-          <h3 className="form__title"> Get in Touch </h3>
-          <p className="form__sub-title"> Alternatively please contact 925-367-0541 </p>
           
           <label htmlFor="name" className="form__label"> Name </label>
           <input type="text" id="name" name="name" autoComplete="off" onChange={handleChangeName} required />

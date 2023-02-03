@@ -1,0 +1,166 @@
+@use '../../styles/mixins' as *;
+
+
+.footer {
+    width: 100%;
+    background-color: darkgrey;
+    text-align: center;
+    @include flex-layout(column,center,center);
+
+
+    &__content {
+        width: 95%;
+        @include flex-layout(column, center, center);
+        gap:0.5rem;
+
+        @include tablet {
+            @include flex-layout(row, space-between, center);
+        }
+
+        @include desktop {
+            @include flex-layout(row, space-around, flex-start);
+            padding: 1rem 0rem;
+        }
+    }
+
+    &__company {
+        @include flex-layout(column, center, center);
+
+        @include tablet {
+            padding:1rem 0;
+        }
+
+        @include desktop {
+            @include flex-layout(row, space-around, flex-start);
+            padding: 0 1rem;
+            gap:4rem;
+        }
+    }
+
+    &__logo {
+        width:100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__info {
+        @include flex-layout(column, center, center);
+        gap:0.5rem;
+    }
+
+    &__name {
+        color:white;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size:1.5rem;
+        }
+
+    }
+
+    &__address-one, 
+    &__address-two {
+        color:black;
+        white-space: pre;
+
+        @include tablet {
+            font-size:1.25rem;
+        }
+
+        @include desktop {
+            font-size:1.25rem;
+        }
+        
+    }
+
+    &__contact {
+        @include flex-layout(column,center,center);
+        gap:0.5rem;
+        margin:1rem 0rem;
+
+        @include tablet {
+            margin: 0;
+            gap:1rem;
+        }
+
+        @include desktop {
+            @include flex-layout(row, center, flex-start);
+        }
+
+
+    }
+
+    &__contact-title {
+        text-transform: uppercase;
+        color:white;
+
+        @include tablet {
+            font-size:1.5rem;
+        }
+
+
+    }
+
+    &__interact {
+        @include flex-layout(column,center,center);
+        @include tablet {
+            gap:0.5rem;
+        }
+
+        
+    }
+
+    &__phone,
+    &__phone-alt,
+    &__email {
+        color:black;
+
+        @include tablet {
+            font-size:1.25rem;
+        }
+
+        @include desktop {
+            font-size:1.25rem;
+        }
+    }
+
+    &__hours {
+        @include flex-layout(column,center, center);
+    }
+
+    &__hours-title {
+        text-transform: uppercase;
+        color:white;
+
+        @include tablet {
+            font-size:1.5rem;
+            margin-top:0.5rem;
+        }
+
+        @include desktop {
+            margin-top: 0;
+            
+        }
+
+
+    }
+
+    &__days {
+        @include flex-layout(column,center,center);
+    }
+
+    &__weekday,
+    &__weekend {
+        white-space: pre-wrap;
+        @include tablet {
+            font-size:1.25rem;
+        }
+
+        @include desktop {
+            font-size:1.25rem;
+        }
+    }
+
+}

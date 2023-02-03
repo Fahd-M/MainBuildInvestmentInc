@@ -1,11 +1,11 @@
 @use '../../styles/mixins' as *;
 
 .clients {
-    //padding-top: 2rem; 
 
     &__content {
         @include flex-layout(column, center, center);
         gap: 1rem;
+        padding:0.5rem;
 
         @include desktop {
             margin-top:3rem;
@@ -15,15 +15,26 @@
     &__title {
         font-size: 1.5rem;
         text-transform: uppercase;
-        text-decoration: underline;
+        margin-top:1rem;
+        color:white;
+
+
         @include tablet {
             font-size:2rem;
+        }
+
+        @include desktop {
+            font-size: 3rem;
         }
     }
 
     &__desc {
         @include tablet {
             font-size:1.5rem;
+        }
+
+        @include desktop {
+            font-size: 2rem;
         }
     }
 }
@@ -42,10 +53,8 @@
 
 .client-card {
     border: 1px solid darkgrey;
-    //background: gray;
     width: 80%; 
-    //box-shadow: 0 4px 8px 0 rgba(248, 244, 244, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    box-shadow: 3px 3px 5px #dfdfdf;
+    box-shadow: 3px 3px 5px #000000aa;
 
     @include flex-layout(column, center, center);
     gap: 0.5rem;
@@ -62,11 +71,20 @@
 
     }
 
+    @include desktop {
+        height: 15rem;
+    }
+
     &__name {
         padding:0.5rem;
-        color:orangered;
+        color:#0042ac;
         text-transform: uppercase;
         text-align: center;
+        letter-spacing: 2px;
+
+        @include desktop {
+            font-size: 1.5rem;
+        }
     }
 
     &__info {
@@ -75,10 +93,14 @@
     }
 
     &__address {
-
+        @include desktop {
+            font-size:1.5rem;
+        }
     }
 
     &__city {
-
+        @include desktop {
+            font-size:1.5rem;
+        }
     }
 }
