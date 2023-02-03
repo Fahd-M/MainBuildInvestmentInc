@@ -32,7 +32,7 @@
         }
     
         @include desktop {
-            margin: 0 auto;
+            margin: 1rem auto;
         }
     }
 
@@ -42,41 +42,50 @@
         padding:1rem;
         margin-bottom:1rem;
         color:white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
 
         border-bottom: 1px solid white;
 
         @include tablet {
-            font-size: 3rem;
+            font-size: 2.5rem;
             padding:0;
         }
 
         @include desktop {
-            font-size:4rem;
+            font-size:3rem;
         }
     }
 
     &__subtitle {
         white-space: pre-wrap;
+        padding:0.5rem;
+        margin-bottom: 1rem;
 
         @include tablet {
-            font-size: 1.5rem;
+            font-size: 1.15rem;
+            @include flex-layout(column,center,center);
         }
 
         @include desktop {
-            font-size:3rem;
+            font-size:1.5rem;
+            margin: 1rem auto;
+
         }
 
         &--bold {
             color: white;
             font-weight: bold;
             letter-spacing: 2px;
+            margin-bottom:1rem;
+
         }
     }
 
     &__form {
         @include tablet {
             width: 90%;
-            margin-top:1rem;
+            margin: 1rem auto;
         }
     }
 

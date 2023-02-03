@@ -15,12 +15,11 @@
     @include tablet {
         max-height: 30vh;
         background-position: center;
-        @include flex-layout(row, flex-end, center);
-        padding-left: 20%;
+        @include flex-layout(row, center, center);
     }
 
     @include desktop {
-        max-height: 40vh;
+        max-height: 55vh;
     
     }
 
@@ -36,7 +35,6 @@
         @include desktop {
             margin: 0 auto;
         }
-        //padding-top: 3.25rem;
     }
 
     &__title {
@@ -49,7 +47,6 @@
 
         &--main {
             color: #000aac;
-            //text-align: center;
         }
     }
 
@@ -61,6 +58,7 @@
             display: inline-block;
             @include flex-layout(column, center, center);
         }
+        
     }
 
 

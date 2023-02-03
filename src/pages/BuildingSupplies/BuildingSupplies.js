@@ -36,7 +36,7 @@ const BuildingSupplies = () => {
             <div className="build-supplies__info">
               <h2 className="build-supplies__title"> Our Building Supplies </h2>
               <p className="build-supplies__desc"> 
-                At Main Build Investment Inc. we are suppliers to building material/equipment supplies, and provide all building equipment required for successful construction of residential and commercial properties.{"\n"}
+                At Main Build Investment Inc. we are suppliers to building material/equipment supplies, and provide all building equipment required for successful construction of residential and commercial properties.{"\n\n"}
                 We provide all necessary steps to ensure a completed project.
               </p>
 
@@ -106,7 +106,7 @@ const BuildingSupplies = () => {
 
               <p className="build-supplies__desc">
                 Custom options are available upon request. {"\n\n"}
-                We will continue to update this page with our building supplies inventory in the near future.{"\n"}
+                We will continue to update this page with our building supplies inventory in the near future.{"\n\n"}
                 Contact us if you have any further inquiries by submitting the form on the 
                   <Link to="/contact" className="build-supplies__desc build-supplies__desc--cta"> contact page. </Link>
               </p>

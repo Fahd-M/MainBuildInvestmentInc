@@ -22,7 +22,7 @@ const Machinery = () => {
             <div className="machinery__info">
               <h2 className="machinery__title"> Our Machinery </h2>
               <p className="machinery__desc"> 
-                Main Build Investment possesses access to various machinery that can take care of the job - no matter the project! {"\n\n"}
+                Main Build Investment has access to various machinery that can take care of the job - no matter the project! {"\n\n"}
                 We are able to provide industrial equipment in all sizes used for residential or commercial construction, paving and more! 
               </p>
 

@@ -12,12 +12,12 @@
         margin-top: 1em;
         margin-bottom: 2em;
         gap:1rem;
-        //padding: 0.5rem;
         text-align: center;
 
         @include desktop{
             margin: 0 auto;
             gap:0.5rem;
+            padding:1rem;
         }
     }
    
@@ -32,7 +32,7 @@
         }
         @include desktop {
             margin-top:2rem;
-            font-size: 4.5rem;
+            font-size: 3rem;
         }
     }
 
@@ -47,7 +47,7 @@
         }
 
         @include desktop {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
     }
 
@@ -58,11 +58,11 @@
 
 
         @include tablet {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         @include desktop {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
     }
 
@@ -72,14 +72,16 @@
         letter-spacing: 1px;
         @include list-reset;
         @include flex-layout(column, center, center);
-        gap:0.5rem;
+        gap:1rem;
         text-align: left;
+
         @include tablet {
-            font-size: 1.5rem;
+            font-size: 1.15rem;
+            padding:0.5rem;
         }
 
         @include desktop {
-            font-size: 2rem;
+            font-size: 1.5rem;
             gap: 1rem;
         }
         
@@ -93,13 +95,12 @@
             text-transform: uppercase;
 
             @include desktop {
-                font-size: 2.5rem;
+                font-size: 1.5rem;
             }
 
         }
 
         &--cta {
-            //@include flex-layout(column, center, center);
             align-self:flex-start;
         }
     }
@@ -122,7 +123,6 @@
         @include flex-layout(column,center,center);
         margin-top: 1em;
         gap:0.5rem;
-        //padding: 0.5rem;
         text-align: left;
 
         @include desktop{
@@ -132,47 +132,58 @@
     }
 
     &__resources-heading {
-        //border-top: 1px solid #000aac;
-        //padding:2rem 1rem 1rem 1rem;
         color:white;
         @include flex-layout(column,center,center);
 
-
-
+        @include tablet {
+            border-top: 2px solid black;
+            border-bottom:2px solid black;
+        }
+        @include desktop {
+            @include flex-layout(row, center,flex-start);
+            padding:1rem;
+        }
 
     }
 
     &__resources-image {
-        width: 80%;
+        width: 40%;
         border-radius:2rem;
-
+        padding-bottom:1rem;
+        
         @include tablet {
             width:50%;
-            float:right;
+        }
+
+        @include desktop {
+            margin:1rem;
+            width:40%;
         }
     }
 
     &__resources-title {
         text-transform: uppercase;
-
+        text-align: center;
         @include tablet {
-            font-size:1.75rem;
+            font-size: 1.5rem;
         }
 
         @include desktop {
-            font-size:3rem;
+            font-size:3.5rem;
+            font-style: italic;
             padding:1rem;
-            margin-top:2rem;
+            margin-top:5%;
         }
     }
 
     &__resources-byline {
         @include tablet {
-            font-size:1.5rem;
+            font-size: 1.15rem;
+            padding:0.5rem;
         }
 
         @include desktop {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -190,11 +201,12 @@
         color:white;
 
         @include tablet {
-            font-size:2rem;
+            font-size:1.5rem;
         }
 
         @include desktop {
-            font-size:3rem;
+            font-size:2rem;
+            margin-top:1rem;
         }
     }
 
@@ -204,31 +216,33 @@
         padding-bottom:1rem;
 
         @include tablet {
-            font-size:1.5rem;
+            font-size: 1.15rem;
+            padding:0.5rem;
+
         }
 
         @include desktop {
-            font-size:2rem;
+            font-size:1.5rem;
         }
     }
 
     &__quotes {
         @include flex-layout(column, center, center);
         gap: 1rem;
-        //padding:0.5rem;
     }
 
     &__quotes-title {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-transform: uppercase;
         color:white;
 
         @include tablet {
-            font-size:2rem;
+            font-size:1.5rem;
         }
 
         @include desktop {
-            font-size:3rem;
+            font-size:2rem;
+            margin-top:1rem;
         }
     }
 
@@ -238,11 +252,13 @@
         padding-bottom:1rem;
 
         @include tablet {
-            font-size:1.5rem;
+            font-size: 1.15rem;
+            padding:0.5rem;
+
         }
 
         @include desktop {
-            font-size:2rem;
+            font-size:1.5rem;
         }
         
     }
@@ -255,30 +271,31 @@
     //padding:1rem;
 
     &__title {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-transform: uppercase;
         color:white;
         text-align: center;
         padding-bottom:0.5rem;
 
         @include tablet {
-            font-size:2rem;
+            font-size:1.5rem;
         }
 
         @include desktop {
-            font-size:3rem;
+            font-size:2rem;
+            margin-top:1rem;
         }
 
     }
 
     &__byline {
         @include tablet {
-            font-size:1.75rem;
+            font-size: 1.15rem;
             margin-top:1rem;
         }
 
         @include desktop {
-            font-size:2.5rem;
+            font-size:1.5rem;
         }
     }
 
@@ -288,11 +305,13 @@
         text-align: left;
 
         @include tablet {
-            font-size:1.5rem;
+            font-size: 1.15rem;
+            padding:0.5rem;
+
         }
 
         @include desktop {
-            font-size:2rem;
+            font-size:1.5rem;
         }
     }
 
@@ -304,11 +323,11 @@
         color:white;
 
         @include tablet {
-            font-size:1.5rem;
+            font-size: 1.15rem;
         }
 
         @include desktop {
-            font-size:2rem;
+            font-size:1.5rem;
         }
     }
 
@@ -318,12 +337,14 @@
         text-align: left;
 
         @include tablet {
-            font-size:1.5rem;
+            font-size: 1.15rem;
             letter-spacing: 2px;
+            padding:0.5rem;
+
         }
 
         @include desktop {
-            font-size:2rem;
+            font-size:1.5rem;
         }
     }
 
@@ -332,12 +353,13 @@
         @include flex-layout(column,center, flex-start);
         
         @include tablet {
-            font-size:1.5rem;
+            font-size: 1.15rem;
             letter-spacing: 2px;
+
         }
 
         @include desktop {
-            font-size:2rem;
+            font-size:1.5rem;
         }
 
     }
@@ -346,23 +368,25 @@
         margin: 0 0 1rem 0;
 
         @include tablet {
-            font-size:1.5rem;
+            font-size: 1.15rem;
         }
 
         @include desktop {
-            font-size:2rem;
+            font-size:1.5rem;
         }
     }
 
     &__conclusion {
 
         @include tablet {
-            font-size:1.5rem;
+            font-size: 1.15rem;
             text-align: left;
+            padding:0.5rem;
+
         }
 
         @include desktop {
-            font-size:2rem;
+            font-size:1.5rem;
         }
     }
 }

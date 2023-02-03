@@ -16,7 +16,7 @@ const Main = () => {
 
             <div className="main__desc-details"> 
               <p className="main__desc-detail">  
-                Main Build Investments as a company our values and culture can be summed up by three words: {"\n"}  
+                Main Build Investments as a company our values and culture can be summed up by three words:  
                   <span className="main__desc-detail--values">
                     passion, dedication and reliability.
                   </span>
@@ -47,7 +47,7 @@ const Main = () => {
             <div className="main__resources-heading">
               <img className="main__resources-image" src={tripleConstraint} alt="Project Management Triple Constraint diagram" />
               <h3 className="main__resources-title"> 
-                Build Your Project on Time & on Budget With Main Build Investment Inc.
+                Build Your Project on Time & on Budget With Main Build Investment
               </h3>
             </div>
 

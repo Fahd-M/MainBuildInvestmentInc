@@ -20,21 +20,21 @@
 
 
         @include tablet {
-            font-size:2rem;
-        }
-
-        @include desktop {
-            font-size: 3rem;
-        }
-    }
-
-    &__desc {
-        @include tablet {
             font-size:1.5rem;
         }
 
         @include desktop {
             font-size: 2rem;
+        }
+    }
+
+    &__desc {
+        @include tablet {
+            font-size:1.25rem;
+        }
+
+        @include desktop {
+            font-size: 1.5rem;
         }
     }
 }
