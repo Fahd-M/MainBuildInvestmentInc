@@ -10,7 +10,7 @@
         margin-top: 1em;
         margin-bottom: 2em;
         gap:1rem;
-        padding: 0.5rem;
+        //padding: 0.5rem;
         text-align: center;
 
         @include desktop{
@@ -121,7 +121,7 @@
         @include flex-layout(column,center,center);
         margin-top: 1em;
         gap:0.5rem;
-        padding: 0.5rem;
+        //padding: 0.5rem;
         text-align: center;
 
         @include desktop{
@@ -132,7 +132,7 @@
 
     &__resources-heading {
         //border-top: 1px solid #000aac;
-        padding:2rem 1rem 1rem 1rem;
+        //padding:2rem 1rem 1rem 1rem;
         color:white;
 
 
@@ -179,7 +179,7 @@
     &__services {
         @include flex-layout(column, center, center);
         gap: 1rem;
-        padding:0.5rem;
+        //padding:0.5rem;
     }
 
     &__services-title {
@@ -214,7 +214,7 @@
     &__quotes {
         @include flex-layout(column, center, center);
         gap: 1rem;
-        padding:0.5rem;
+        //padding:0.5rem;
     }
 
     &__quotes-title {
@@ -251,7 +251,7 @@
 
 .installation {
     @include flex-layout(column,center,center);
-    padding:1rem;
+    //padding:1rem;
 
     &__title {
         font-size: 1.5rem;
