@@ -12,12 +12,12 @@ const Main = () => {
         <section className="main__content">
             <h2 className="main__title"> About Us </h2>
             <p className="main__byline">  Founded By Riad Wehbe(Owner and Project Manager) </p>
-            <p className="main__desc"> Real estate and construction specialist </p>
+            <p className="main__desc"> Specialist in all your project needs </p>
 
             <div className="main__desc-details"> 
               <p className="main__desc-detail">  
                 Main Build Investments as a company our values and culture can be summed up by three words:  
-                  <span className="main__desc-detail--values">
+                  <span className="main__desc-detail--bold">
                     passion, dedication and reliability.
                   </span>
               </p>
@@ -53,7 +53,7 @@ const Main = () => {
 
             <p className="main__resources-byline">
               We deploy the necessary resources and personnel to provide value and achieve your project objectives. {"\n"} 
-              We are a residential general contracting and construction management firm and service many areas. 
+              We assist our clients in all types of projects, residential or commercial, we meet all your needs.  
             </p>
 
             <ClientList />
@@ -77,8 +77,7 @@ const Main = () => {
         </section>
 
         <section className="installation">
-          <h3 className="installation__title"> Installation & Delivery </h3>
-          <h4 className="installation__byline"> Installation & Delivery Options: </h4>
+          <h3 className="installation__title"> Order & Delivery Options </h3>
 
           <p className="installation__text">
             Main Build Investments, we offer a variety of delivery and installation options, depending on your region and product category, including:
@@ -105,10 +104,9 @@ const Main = () => {
 
           <div className="installation__text-offerings"> We also offer: 
             <ul className="installation__offerings"> 
-              <li className="installation__offering"> Turn-key Job Quotes </li>
               <li className="installation__offering"> Training & Education </li>
               <li className="installation__offering"> Product Support </li>
-              <li className="installation__offering"> Installation & Delivery Options</li>
+              <li className="installation__offering"> Delivery Options</li>
               <li className="installation__offering"> Customer Support </li>
               <li className="installation__offering"> Marketing Support </li>
             </ul>
