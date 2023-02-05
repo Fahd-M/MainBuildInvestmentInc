@@ -80,7 +80,7 @@ const Main = () => {
           <h3 className="installation__title"> Order & Delivery Options </h3>
 
           <p className="installation__text">
-            Main Build Investments, we offer a variety of delivery and installation options, depending on your region and product category, including:
+            Main Build Investments, we offer a variety of delivery options, depending on your region and product category, including:
 
           </p>
           <ul className="installation__list">
